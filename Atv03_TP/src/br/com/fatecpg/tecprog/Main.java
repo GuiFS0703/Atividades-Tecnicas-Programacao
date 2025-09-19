@@ -21,13 +21,11 @@ public class Main {
 		meuProduto.setQt_estoque(15);
 		System.out.println(meuProduto.getNome() + " | R$" + meuProduto.getPreco() + " | " + meuProduto.getQt_estoque());
 		System.out.println("================================================");
-
 		System.out.println("Informações do carro: ");
 		System.out.println("Informações do carro: " + eclipse.getModelo() + " | " + eclipse.getAno() + " | "
 				+ eclipse.getCor() + " | " + eclipse.getCapacidade_tanque() + " | " + eclipse.getQt_gasolina());
 		System.out.println("================================================");
 		System.out.println("Ações do carro: ");
-
 		eclipse.acelerarCarro();
 		eclipse.frearCarro();
 		eclipse.desligarCarro();

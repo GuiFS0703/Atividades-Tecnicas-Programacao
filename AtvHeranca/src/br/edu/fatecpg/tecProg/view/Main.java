@@ -66,19 +66,16 @@ public class Main {
 		 * break; default: System.out.println("Tipo de pagamento inválido!"); }
 		 */
 
-		boolean login = false;
-		String user, senha;
-		System.out.println("Realize seu login!");
+		/*
+		 * boolean login = false; String user, senha;
+		 * System.out.println("Realize seu login!");
+		 * 
+		 * do { System.out.println("Digite seu user: "); user = scan.next().trim();
+		 * System.out.println("Digite sua senha: "); senha = scan.next();
+		 * SistemaDeSeguranca FBI = new SistemaDeSeguranca(user, senha); login =
+		 * FBI.login(user, senha); FBI.logout(); } while (login == false);
+		 */
 
-		do {
-			System.out.println("Digite seu user: ");
-			user = scan.next().trim();
-			System.out.println("Digite sua senha: ");
-			senha = scan.next();
-			SistemaDeSeguranca FBI = new SistemaDeSeguranca(user, senha);
-			login = FBI.login(user, senha);
-			FBI.logout();
-		} while (login == false);
 	}
 
 }

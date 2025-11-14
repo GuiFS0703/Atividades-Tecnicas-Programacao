@@ -31,7 +31,11 @@ public class Empresa {
 	}
 
 	public boolean addFuncionario(String nome, String cargo, Double salario) {
-		if (nome != null && cargo != null && salario > 0) {
+		if (this.Funcionarios.size() >= 10) { // era 5 antes
+			System.out.println("Limite de clientes alcançado!");
+			return false;
+		}
+		else if (nome != null && cargo != null && salario > 0) {
 			Funcionario funcionario = new Funcionario(nome, cargo, salario);
 			Funcionarios.add(funcionario);
 			return true;
